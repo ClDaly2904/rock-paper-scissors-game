@@ -21,10 +21,14 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 2.6rem;
+    font-size: 2.2rem;
     letter-spacing: 1.4rem;
 }
 
+/* Header */
+header {
+    line-height: 20px;
+}
 /* Footer */
 footer {
     width: 100%;
@@ -32,7 +36,16 @@ footer {
     bottom: 0;
 }
 
+/* Buttons */
+.button {
+    background-color: black;
+    color: white;
+    font-family: 'Sora', sans-serif;
+    margin: 2%;
+}
+
 /* Game introduction area */
+/* Icon area */
 .game-intro {
     width: 90%;
     margin: auto;
@@ -43,7 +56,7 @@ footer {
     border: 2px solid black;
     display: flex;
     justify-content: space-evenly;
-    padding: 4% 0;
+    padding: 2% 0;
 }
 
 
@@ -68,4 +81,9 @@ animation-fill-mode: forwards;
 
 #rock-img, #paper-img, #scissors-img {
     width: 100%;
+}
+
+/*Player setup area */
+.player-setup {
+    padding: 4%;
 }
