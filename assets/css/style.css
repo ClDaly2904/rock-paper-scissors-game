@@ -24,3 +24,48 @@ h1 {
     font-size: 2.6rem;
     letter-spacing: 1.4rem;
 }
+
+/* Footer */
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+/* Game introduction area */
+.game-intro {
+    width: 90%;
+    margin: auto;
+}
+
+.icon-area {
+    background-color: white;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4% 0;
+}
+
+
+.icon {
+    width: 20%;
+/* Creates animation for rock paper scissors icons upon loading the home page */
+    animation-name: icon-zoom;
+animation-duration: 2s;
+animation-fill-mode: forwards;
+}
+
+/* creates level of zoom for icon image */
+
+@keyframes icon-zoom {
+    from{
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1.0);
+    }
+}
+
+#rock-img, #paper-img, #scissors-img {
+    width: 100%;
+}
