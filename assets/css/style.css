@@ -1,1 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Sora&display=swap');
+
+/* Global styles */
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'Sora', sans-serif;
+    text-align: center;
+    background-image: linear-gradient(to right bottom, #fcec1a, #c3f752, #8cfb84, #52fbb3, #00f8db, #00eeed, #00e3fa, #00d7ff, #33c3ff, #92a5ff, #d87de8, #ff4fa3);
+    background-attachment: fixed;
+}
+
+/* Headings */
+h1, h2 {
+    font-family: 'JetBrains Mono', monospace;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.6rem;
+    letter-spacing: 1.4rem;
+}
