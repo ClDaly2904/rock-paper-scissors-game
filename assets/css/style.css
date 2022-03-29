@@ -98,3 +98,14 @@ animation-fill-mode: forwards;
 .player-setup {
     padding: 4%;
 }
+
+.choices {
+    width: 100%;
+    padding: 0;
+    margin: auto;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-evenly;
+}
