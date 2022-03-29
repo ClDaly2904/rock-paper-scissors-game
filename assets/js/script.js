@@ -16,3 +16,12 @@ rulesBtn.onclick = function() {
 closeBtn.onclick = function() {
   rulesPopup.style.display = "none";
 }
+
+/**
+ * Create function so modal closes when user clicks outside of popup area
+ */
+window.onclick = function(event) {
+  if (event.target == rulesPopup) {
+    rulesPopup.style.display = "none";
+  }
+}
