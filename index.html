@@ -34,10 +34,27 @@
             <input type="text" id="playername" name="fname" placeholder="Please enter name" required>
             <input class = "button" type="submit" value="Submit" id="submit-name">
             <br>
-            <button class="button">Rules</button>
+            <button class="button" id="rules">Rules</button>
             <a href="play.html"><button class="button">Let's Play!</button></a>
         </div>
     </div>
+
+<!-- The rules modal popup-->
+<div id="rules-modal" class="modal">
+  <div class="rules-content">
+    <span class="close">&times;</span>
+    <ol>
+        <li>Choose either rock, paper or scissors and battle against the computer to see who is 
+            victorious in this classic game of chance!
+            <ul>
+                <li>Rock crushes scissors</li>
+                <li>Scissors cut paper</li>
+                <li>Paper covers rock</li>
+            </ul>
+        </li>
+        <li>First to win three draws wins the game!</li>
+  </div>
+</div>
     
     <footer>
         <p>copyright@cldaly2904 2022</p>
