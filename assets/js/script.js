@@ -4,7 +4,7 @@ var rulesBtn = document.getElementById("rules");
 var closeBtn = document.getElementsByClassName("close")[0];
 
 /**
- * Create function to display modal on buton click
+ * Create function to display modal on button click
  */
 rulesBtn.onclick = function() {
   rulesPopup.style.display = "block";

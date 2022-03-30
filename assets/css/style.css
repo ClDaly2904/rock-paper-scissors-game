@@ -136,6 +136,7 @@ animation-fill-mode: forwards;
     font-weight: bold;
   }
 
+  /* close button on popup */
   .close:hover,
   .close:focus {
     color: black;
