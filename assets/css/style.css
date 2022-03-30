@@ -11,6 +11,7 @@ body {
     text-align: center;
     background-image: linear-gradient(to right bottom, #fcec1a, #c3f752, #8cfb84, #52fbb3, #00f8db, #00eeed, #00e3fa, #00d7ff, #33c3ff, #92a5ff, #d87de8, #ff4fa3);
     background-attachment: fixed;
+    background-color: #af95f6;
 }
 
 /* Headings */
@@ -53,10 +54,13 @@ footer {
     color: white;
     font-family: 'Sora', sans-serif;
     margin: 2%;
+    font-size: 1.2rem;
 }
 
 .button:hover {
     cursor: pointer;
+    color: black;
+    background-color: white;
 }
 
 /* Game introduction area */

@@ -11,6 +11,7 @@ For first time users, the site has a welcome page where they may view the rules 
 ### Colourscheme
 As Rock Paper Scissors is ultimately a game, I wanted to make the site a fun space. For this reason I chose to provide users with a colourful gradient background. I used an eyedropper tool to pick the exact colours from the three main images used (the rock, paper and scissors icons) and used ColorSpace's gradient generator[https://mycolor.space/gradient3] to create a vibrant background that maintained colour continuity for the user.
 I paired this with large white areas for much of the gameplay so as not to distract the user from the game itself and to ensure there was still sufficient contrast for the user.
+I also added a fallback background colour that was a transition colour between the pink and blue of the gradient in case the gradient image failed to load in the browser.
 ### Fonts
 I settled on Jet Brains Mono for the headings in Rock Paper Scissors as it is a basic but computer-like font, reminiscent of the retro direction I have taken this browser-based game. Sora was chosen as a complimentary font for the body as it still has a computer-like feel but is slightly softer. Both fonts are very easy to read and greatly accessible to both users. They were chosen from an article by awwwards. on the [20 Best Google Fonts](https://www.awwwards.com/20-best-web-fonts-from-google-web-fonts-and-font-face.html).
 ### Home button
@@ -24,6 +25,8 @@ I settled on Jet Brains Mono for the headings in Rock Paper Scissors as it is a 
 - Modal popup box triggered by the click of the 'Rules' button on the homepage
 - Allows first time users to read and understand the rules of the game
 - Sets the terms of overall victory for users new to the game, but also to those familiar to the game of Rock Paper Scissors
+### Buttons
+- Following user feedback during the testing phase of creating Rock Paper Scissors, I increased the size of the buttons on the site and gave them hover features. This meant that the presence of the buttons were not only more obvious to users as features on the page, but also provided better feeback from the page to the user and improved experience.
 ### Call to action play button
 ### Player choice buttons
 ### Area to display player and computer choice icons
