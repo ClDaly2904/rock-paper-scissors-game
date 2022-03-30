@@ -53,7 +53,7 @@ footer {
     background-color: black;
     color: white;
     font-family: 'Sora', sans-serif;
-    margin: 2%;
+    margin: 1%;
     font-size: 1.2rem;
 }
 
@@ -154,7 +154,21 @@ animation-fill-mode: forwards;
     margin: auto;
 }
 
+.play-area {
+    background-color: white;
+    border: 2px solid black;
+    padding: 2% 0;
+}
+.result-area {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .scoreboard {
     display: flex;
     justify-content: space-evenly;
+}
+
+.play-icon {
+    width: 100%;
 }

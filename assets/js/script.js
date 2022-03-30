@@ -25,3 +25,26 @@ window.onclick = function(event) {
     rulesPopup.style.display = "none";
   }
 }
+
+// Player username
+/**
+ * Creating function to get and save player username
+ */
+function handleSubmit() {
+  let playerName = (document.getElementById("playername-input").value);
+  localStorage.setItem("storedName", playerName);
+}
+
+let submitPlayer = document.getElementById("submit-name");
+submitPlayer.addEventListener("click", handleSubmit);
+
+/*// Assigning player username to span in play.html
+function assignPlayerName() {
+  localStorage.getItem("storedName", playerName);
+  let displayPlayer = document.getElementById("player-name").value;
+  displayPlayer = playerName;
+}
+window.onload = assignPlayerName(); */
+
+// Not allowing submit before username box filled
+

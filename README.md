@@ -44,9 +44,9 @@ I settled on Jet Brains Mono for the headings in Rock Paper Scissors as it is a 
 ## Credits
 ### Content
 ### General Reference
-    - [W3Schools](https://www.w3schools.com/html/). I relied heavily on the guide for making modal popup boxes from this site.
-    - [CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-    - [Stack Overflow](https://stackoverflow.com/)
+- [W3Schools](https://www.w3schools.com/html/). I relied heavily on the guide for making modal popup boxes from this site.
+- [CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [Stack Overflow](https://stackoverflow.com/)
 ### Media
 - Rock Paper Scissors icons from [Vecteezy](https://www.vecteezy.com/free-vector/rock)
 - Fonts from [Google Fonts](https://fonts.google.com/)
