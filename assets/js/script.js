@@ -30,7 +30,7 @@ window.onclick = function(event) {
 /**
  * Creating function to get and save player username
  */
-function handleSubmit() {
+ function handleSubmit() {
   let playerName = (document.getElementById("playername-input").value);
   localStorage.setItem("storedName", playerName);
 }
@@ -47,4 +47,3 @@ function assignPlayerName() {
 window.onload = assignPlayerName(); */
 
 // Not allowing submit before username box filled
-

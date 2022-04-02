@@ -18,19 +18,19 @@
 
     <div class="play-area">
         <div class="choices">
-        <button class="button control">Rock</button>
-        <button class="button control">Paper</button>
-        <button class="button control">Scissors</button>
+        <button id= "rockButton" class="button control">Rock</button>
+        <button id= "paperButton" class="button control">Paper</button>
+        <button id= "scissorsButton" class="button control">Scissors</button>
         </div> 
         <div class="result-area">
-            <div class="player-choice">
-                <img class="icon play-icon" src="/assets/images/rock-icon.png">
+            <div>
+                <img id="player-choice" class="icon play-icon" src="/assets/images/rock-icon.png">
             </div>
-            <div class="result-message">
-    
+            <div>
+                <span id="result-message"></span>
             </div>
-            <div class="computer-choice">
-                <img class="icon play-icon" src="/assets/images/rock-icon.png">
+            <div>
+                <img id="computer-choice" class="icon play-icon" src="/assets/images/rock-icon.png">
             </div>
         </div>
     </div>
@@ -53,6 +53,6 @@
      <!-- fontawesome script -->
      <script src="https://kit.fontawesome.com/f344be3b13.js" crossorigin="anonymous"></script>
      <!-- javascript-->
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/playscript.js"></script>
 </body>
 </html>
