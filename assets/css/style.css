@@ -172,3 +172,7 @@ animation-fill-mode: forwards;
 .play-icon {
     width: 100%;
 }
+
+#result-area {
+    margin: auto;
+}

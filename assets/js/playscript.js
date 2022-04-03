@@ -1,9 +1,6 @@
 // Getting all the DOM elements needed for gameplay
 const computerChoiceDisplay = document.getElementById("computer-choice");
 const playerChoiceDisplay = document.getElementById("player-choice");
-const resultMessageDisplay = document.getElementById("result-message");
-const playerScore = document.getElementById("player-score");
-const computerScore = document.getElementById("computer-score");
 const rockButton = document.getElementById("rockButton");
 const paperButton = document.getElementById("paperButton");
 const scissorsButton = document.getElementById("scissorsButton");
@@ -16,7 +13,33 @@ function generateComputerChoice() {
   let choices = ['rockButton', 'paperButton', 'scissorsButton'];
   let randomNumber = Math.floor(Math.random() * 3);
   return choices[randomNumber];
+  /* trigger function to display different img in computer choice div */
 }
+
+function playerWins() {
+  /* Increase player score */
+    let oldScore = parseInt(document.getElementById("player-score").innerText);
+    document.getElementById("player-score").innerText = ++oldScore;
+    /* Display result message to congratulate player*/
+    let resultMessageDisplay = document.getElementById("result-message");
+    resultMessageDisplay.innerText = `Congratulations! You win this draw!`
+};
+
+function playerLoses() {
+    /* Increase computer score */
+    let oldComputerScore = parseInt(document.getElementById("computer-score").innerText);
+    document.getElementById("computer-score").innerText = ++oldComputerScore;
+    /* Display result message to commiserate player*/
+    let resultMessageDisplay = document.getElementById("result-message");
+    resultMessageDisplay.innerText = `Sorry! Computer wins this draw!`
+}
+
+function playerDraws() {
+  /* Display draw message to player */
+  let resultMessageDisplay = document.getElementById("result-message");
+  resultMessageDisplay.innerText = `You both drew the same! It's a draw!`
+}
+
 
 /**
  * Function to use switch statement to compare player and computer choices,
@@ -58,6 +81,7 @@ paperButton.addEventListener("click", function () {
 scissorsButton.addEventListener("click", function () {
   gameplay("scissorsButton");
   })
+  /* trigger function to display different img for player choice display*/
 }
 
 clickedButton();
