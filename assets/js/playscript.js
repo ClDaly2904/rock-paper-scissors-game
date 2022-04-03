@@ -18,11 +18,33 @@ function generateComputerChoice() {
   return choices[randomNumber];
 }
 
-generateComputerChoice();
+/**
+ * Function to use switch statement to compare player and computer choices,
+ * works out the winner and triggers the relevant function
+ */
+function gameplay (playerChoiceDisplay) {
+  let computerChoiceDisplay = generateComputerChoice();
+  switch (playerChoiceDisplay + computerChoiceDisplay) {
+    case "rockButtonscissorsButton":
+    case "scissorsButtonpaperButton":
+    case "paperButtonrockButton":
+      playerWins();
+      break;
+    case "rockButtonpaperButton":
+    case "scissorsButtonrockButton":
+    case "paperButtonscissorsButton":
+      playerLoses();
+      break;
+      case "rockButtonrockButton":
+      case "scissorsButtonscissorsButton":
+      case "paperButtonpaperButton":
+      playerDraws();
+  }
+}
 
 /**
- * Creating function to recognise when player clicks on controls,
- * triggers game function and passes relevant parameter
+ * Creating function to recognise when player clicks on controls
+ * and makes their choice, triggers game function and passes relevant parameter
  */
 function clickedButton() {
   rockButton.addEventListener("click", function () {
