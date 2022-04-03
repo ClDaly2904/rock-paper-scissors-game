@@ -16,28 +16,42 @@ function generateComputerChoice() {
   /* trigger function to display different img in computer choice div */
 }
 
-function playerWins() {
+/**
+ * Convert player and computer choice input for better user readablilty
+ */
+function convertToMessage(term) {
+  if (term === "rockButton") return "Rock";
+  if (term === "paperButton") return "Paper";
+  return "Scissors";
+}
+
+function playerWins(playerChoiceDisplay, computerChoiceDisplay) {
   /* Increase player score */
     let oldScore = parseInt(document.getElementById("player-score").innerText);
     document.getElementById("player-score").innerText = ++oldScore;
     /* Display result message to congratulate player*/
     let resultMessageDisplay = document.getElementById("result-message");
-    resultMessageDisplay.innerText = `Congratulations! You win this draw!`
+    resultMessageDisplay.innerText = `You played ${convertToMessage(playerChoiceDisplay)}, Computer played ${convertToMessage(computerChoiceDisplay)}.
+    ${convertToMessage(playerChoiceDisplay)} beats  ${convertToMessage(computerChoiceDisplay)}!
+    You win this draw!`;
 };
 
-function playerLoses() {
+function playerLoses(playerChoiceDisplay, computerChoiceDisplay) {
     /* Increase computer score */
     let oldComputerScore = parseInt(document.getElementById("computer-score").innerText);
     document.getElementById("computer-score").innerText = ++oldComputerScore;
     /* Display result message to commiserate player*/
     let resultMessageDisplay = document.getElementById("result-message");
-    resultMessageDisplay.innerText = `Sorry! Computer wins this draw!`
+    resultMessageDisplay.innerText = `You played ${convertToMessage(playerChoiceDisplay)}, Computer played ${convertToMessage(computerChoiceDisplay)}.
+    ${convertToMessage(computerChoiceDisplay)} beats  ${convertToMessage(playerChoiceDisplay)}!
+    You lose this draw!`;
 }
 
-function playerDraws() {
+function playerDraws(playerChoiceDisplay, computerChoiceDisplay) {
   /* Display draw message to player */
   let resultMessageDisplay = document.getElementById("result-message");
-  resultMessageDisplay.innerText = `You both drew the same! It's a draw!`
+  resultMessageDisplay.innerText = `You played ${convertToMessage(playerChoiceDisplay)}, Computer played ${convertToMessage(computerChoiceDisplay)}.
+  It's a draw!`
 }
 
 
@@ -51,17 +65,17 @@ function gameplay (playerChoiceDisplay) {
     case "rockButtonscissorsButton":
     case "scissorsButtonpaperButton":
     case "paperButtonrockButton":
-      playerWins();
+      playerWins(playerChoiceDisplay, computerChoiceDisplay);
       break;
     case "rockButtonpaperButton":
     case "scissorsButtonrockButton":
     case "paperButtonscissorsButton":
-      playerLoses();
+      playerLoses(playerChoiceDisplay, computerChoiceDisplay);
       break;
       case "rockButtonrockButton":
       case "scissorsButtonscissorsButton":
       case "paperButtonpaperButton":
-      playerDraws();
+      playerDraws(playerChoiceDisplay, computerChoiceDisplay);
   }
 }
 

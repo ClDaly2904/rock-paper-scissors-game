@@ -174,5 +174,5 @@ animation-fill-mode: forwards;
 }
 
 #result-area {
-    margin: auto;
+    margin: auto 0;
 }
