@@ -103,10 +103,13 @@ function gameplay (playerChoiceDisplay) {
 function updateComputerChoice(computerChoiceDisplay) {
   if (computerChoiceDisplay == "paperButton") {
     document.getElementById("computer-choice").src="/assets/images/paper-icon.png";
+    document.getElementById("computer-choice").alt="Icon of a piece of paper";
   } else if (computerChoiceDisplay == "scissorsButton") {
     document.getElementById("computer-choice").src="/assets/images/scissors-icon.png";
+    document.getElementById("computer-choice").alt="Icon of a pair of scissors";
   } else {
     document.getElementById("computer-choice").src="/assets/images/rock-icon.png";
+    document.getElementById("computer-choice").alt-"Icon of a hand in a fist";
   }
 }
 
@@ -119,16 +122,19 @@ function clickedButton() {
   gameplay("rockButton");
   // updates player choice display img to relevant icon
   playerChoiceDisplay.src="/assets/images/rock-icon.png"
+  playerChoiceDisplay.alt="Icon of a hand in a fist";
   })
   
 paperButton.addEventListener("click", function () {
   gameplay("paperButton");
   playerChoiceDisplay.src="/assets/images/paper-icon.png"
+  playerChoiceDisplay.alt="Icon of a piece of paper";
   })
   
 scissorsButton.addEventListener("click", function () {
   gameplay("scissorsButton");
   playerChoiceDisplay.src="/assets/images/scissors-icon.png";
+  playerChoiceDisplay.alt="Icon of a pair of scissors";
   })
 }
 
