@@ -86,16 +86,19 @@ function gameplay (playerChoiceDisplay) {
 function clickedButton() {
   rockButton.addEventListener("click", function () {
     gameplay("rockButton");
+    // updates player choice display img to relevant icon
+    playerChoiceDisplay.src="/assets/images/rock-icon.png"
   })
   
 paperButton.addEventListener("click", function () {
   gameplay("paperButton");
+  playerChoiceDisplay.src="/assets/images/paper-icon.png"
   })
   
 scissorsButton.addEventListener("click", function () {
   gameplay("scissorsButton");
+  playerChoiceDisplay.src="/assets/images/scissors-icon.png";
   })
-  /* trigger function to display different img for player choice display*/
 }
 
 clickedButton();
