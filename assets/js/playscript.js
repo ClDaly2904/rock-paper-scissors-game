@@ -33,6 +33,7 @@ function playerWins(playerChoiceDisplay, computerChoiceDisplay) {
   resultMessageDisplay.innerText = `You played ${convertToMessage(playerChoiceDisplay)}, Computer played ${convertToMessage(computerChoiceDisplay)}.
   ${convertToMessage(playerChoiceDisplay)} beats  ${convertToMessage(computerChoiceDisplay)}!
   You win this draw!`;
+  playWinSound();
 };
 
 function playerLoses(playerChoiceDisplay, computerChoiceDisplay) {
@@ -44,6 +45,7 @@ function playerLoses(playerChoiceDisplay, computerChoiceDisplay) {
   resultMessageDisplay.innerText = `You played ${convertToMessage(playerChoiceDisplay)}, Computer played ${convertToMessage(computerChoiceDisplay)}.
   ${convertToMessage(computerChoiceDisplay)} beats  ${convertToMessage(playerChoiceDisplay)}!
   You lose this draw!`;
+  playLoseSound();
 }
 
 function playerDraws(playerChoiceDisplay, computerChoiceDisplay) {
@@ -51,8 +53,26 @@ function playerDraws(playerChoiceDisplay, computerChoiceDisplay) {
   let resultMessageDisplay = document.getElementById("result-message");
   resultMessageDisplay.innerText = `You played ${convertToMessage(playerChoiceDisplay)}, Computer played ${convertToMessage(computerChoiceDisplay)}.
   It's a draw!`
+  playDrawSound();
 }
 
+// Plays win sound if player wins
+function playWinSound(){
+  let winSound = document.getElementById("win-sound");
+  winSound.play();
+}
+
+// Plays lose sound if player loses
+function playLoseSound(){
+  let loseSound = document.getElementById("lose-sound");
+  loseSound.play();
+}
+
+// Plays draw sound if player draws
+function playDrawSound(){
+  let drawSound = document.getElementById("draw-sound");
+  drawSound.play();
+}
 
 /**
  * Function to use switch statement to compare player and computer choices,
@@ -82,8 +102,8 @@ function gameplay (playerChoiceDisplay) {
 // Updates computer choice display icon to reflect randomly generated computer choice
 function updateComputerChoice(computerChoiceDisplay) {
   if (computerChoiceDisplay == "paperButton") {
-    document.getElementById("computer-choice").src="/assets/images/paper-icon.png"
-  } if (computerChoiceDisplay == "scissorsButton") {
+    document.getElementById("computer-choice").src="/assets/images/paper-icon.png";
+  } else if (computerChoiceDisplay == "scissorsButton") {
     document.getElementById("computer-choice").src="/assets/images/scissors-icon.png";
   } else {
     document.getElementById("computer-choice").src="/assets/images/rock-icon.png";
