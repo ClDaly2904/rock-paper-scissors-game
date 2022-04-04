@@ -13,7 +13,6 @@ function generateComputerChoice() {
   let choices = ['rockButton', 'paperButton', 'scissorsButton'];
   let randomNumber = Math.floor(Math.random() * 3);
   return choices[randomNumber];
-  /* trigger function to display different img in computer choice div */
 }
 
 /**
@@ -27,24 +26,24 @@ function convertToMessage(term) {
 
 function playerWins(playerChoiceDisplay, computerChoiceDisplay) {
   /* Increase player score */
-    let oldScore = parseInt(document.getElementById("player-score").innerText);
-    document.getElementById("player-score").innerText = ++oldScore;
-    /* Display result message to congratulate player*/
-    let resultMessageDisplay = document.getElementById("result-message");
-    resultMessageDisplay.innerText = `You played ${convertToMessage(playerChoiceDisplay)}, Computer played ${convertToMessage(computerChoiceDisplay)}.
-    ${convertToMessage(playerChoiceDisplay)} beats  ${convertToMessage(computerChoiceDisplay)}!
-    You win this draw!`;
+  let oldScore = parseInt(document.getElementById("player-score").innerText);
+  document.getElementById("player-score").innerText = ++oldScore;
+  /* Display result message to congratulate player*/
+  let resultMessageDisplay = document.getElementById("result-message");
+  resultMessageDisplay.innerText = `You played ${convertToMessage(playerChoiceDisplay)}, Computer played ${convertToMessage(computerChoiceDisplay)}.
+  ${convertToMessage(playerChoiceDisplay)} beats  ${convertToMessage(computerChoiceDisplay)}!
+  You win this draw!`;
 };
 
 function playerLoses(playerChoiceDisplay, computerChoiceDisplay) {
-    /* Increase computer score */
-    let oldComputerScore = parseInt(document.getElementById("computer-score").innerText);
-    document.getElementById("computer-score").innerText = ++oldComputerScore;
-    /* Display result message to commiserate player*/
-    let resultMessageDisplay = document.getElementById("result-message");
-    resultMessageDisplay.innerText = `You played ${convertToMessage(playerChoiceDisplay)}, Computer played ${convertToMessage(computerChoiceDisplay)}.
-    ${convertToMessage(computerChoiceDisplay)} beats  ${convertToMessage(playerChoiceDisplay)}!
-    You lose this draw!`;
+  /* Increase computer score */
+  let oldComputerScore = parseInt(document.getElementById("computer-score").innerText);
+  document.getElementById("computer-score").innerText = ++oldComputerScore;
+  /* Display result message to commiserate player*/
+  let resultMessageDisplay = document.getElementById("result-message");
+  resultMessageDisplay.innerText = `You played ${convertToMessage(playerChoiceDisplay)}, Computer played ${convertToMessage(computerChoiceDisplay)}.
+  ${convertToMessage(computerChoiceDisplay)} beats  ${convertToMessage(playerChoiceDisplay)}!
+  You lose this draw!`;
 }
 
 function playerDraws(playerChoiceDisplay, computerChoiceDisplay) {
@@ -61,7 +60,8 @@ function playerDraws(playerChoiceDisplay, computerChoiceDisplay) {
  */
 function gameplay (playerChoiceDisplay) {
   let computerChoiceDisplay = generateComputerChoice();
-  switch (playerChoiceDisplay + computerChoiceDisplay) {
+  updateComputerChoice(computerChoiceDisplay);
+   switch (playerChoiceDisplay + computerChoiceDisplay) {
     case "rockButtonscissorsButton":
     case "scissorsButtonpaperButton":
     case "paperButtonrockButton":
@@ -79,15 +79,26 @@ function gameplay (playerChoiceDisplay) {
   }
 }
 
+// Updates computer choice display icon to reflect randomly generated computer choice
+function updateComputerChoice(computerChoiceDisplay) {
+  if (computerChoiceDisplay == "paperButton") {
+    document.getElementById("computer-choice").src="/assets/images/paper-icon.png"
+  } if (computerChoiceDisplay == "scissorsButton") {
+    document.getElementById("computer-choice").src="/assets/images/scissors-icon.png";
+  } else {
+    document.getElementById("computer-choice").src="/assets/images/rock-icon.png";
+  }
+}
+
 /**
  * Creating function to recognise when player clicks on controls
  * and makes their choice, triggers game function and passes relevant parameter
  */
 function clickedButton() {
   rockButton.addEventListener("click", function () {
-    gameplay("rockButton");
-    // updates player choice display img to relevant icon
-    playerChoiceDisplay.src="/assets/images/rock-icon.png"
+  gameplay("rockButton");
+  // updates player choice display img to relevant icon
+  playerChoiceDisplay.src="/assets/images/rock-icon.png"
   })
   
 paperButton.addEventListener("click", function () {
