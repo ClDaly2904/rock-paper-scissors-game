@@ -27,7 +27,7 @@
                 <img id="player-choice" class="icon play-icon" src="/assets/images/rock-icon.png" alt="Icon of a hand curled into a fist">
             </div>
             <div id = result-area>
-                <span id="result-message"></span>
+                <span id="result-message">Choose from one of the buttons above to get started...</span>
             </div>
             <div>
                 <img id="computer-choice" class="icon play-icon" src="/assets/images/rock-icon.png" alt="Icon of a hand curled into a fist">
@@ -50,6 +50,26 @@
     <audio src="assets/sounds/lose-sound.mp3" id="lose-sound"></audio>
     <audio src="assets/sounds/draw-sound.mp3" id="draw-sound"></audio>
     
+    <div id="win-modal" class="modal">
+        <div class="modal-content result-modal">
+          <span class="close result-close">&times;</span>
+          <h2>Victory!</h2>
+          <p>Congratulations on reaching 5 points. <br> Hit the red cross to play again.</bt></p>
+        </div>
+      </div>
+
+      <div id="lose-modal" class="modal">
+        <div class="modal-content result-modal">
+          <span class="close result-close">&times;</span>
+          <h2>Defeat!</h2>
+          <p>Computer reached 5 points first. <br> Hit the red cross to play again.</bt></p>
+        </div>
+      </div>
+
+    <footer>
+        <p>copyright@cldaly2904 2022</p>
+    </footer>
+
     <footer>
         <p>copyright@cldaly2904 2022</p>
     </footer>

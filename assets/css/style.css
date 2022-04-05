@@ -119,8 +119,8 @@ animation-fill-mode: forwards;
     background-color: rgba(0,0,0,0.6);
   }
   
-  /* rules popup modal */
-  .rules-content {
+  /* popup modal */
+  .modal-content {
       text-align: left;
     background-color: #fefefe;
     margin: 10% auto;
@@ -175,4 +175,8 @@ animation-fill-mode: forwards;
 
 #result-area {
     margin: auto 0;
+}
+
+.result-modal {
+    text-align: center;
 }

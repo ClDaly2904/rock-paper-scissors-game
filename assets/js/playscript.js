@@ -34,6 +34,7 @@ function playerWins(playerChoiceDisplay, computerChoiceDisplay) {
   ${convertToMessage(playerChoiceDisplay)} beats  ${convertToMessage(computerChoiceDisplay)}!
   You win this draw!`;
   playWinSound();
+  overallWinner();
 };
 
 function playerLoses(playerChoiceDisplay, computerChoiceDisplay) {
@@ -46,6 +47,7 @@ function playerLoses(playerChoiceDisplay, computerChoiceDisplay) {
   ${convertToMessage(computerChoiceDisplay)} beats  ${convertToMessage(playerChoiceDisplay)}!
   You lose this draw!`;
   playLoseSound();
+  overallWinner();
 }
 
 function playerDraws(playerChoiceDisplay, computerChoiceDisplay) {
@@ -138,4 +140,20 @@ scissorsButton.addEventListener("click", function () {
   })
 }
 
-clickedButton();
+/**
+ * Function to compare player and computer score to overall victory conditions, if met trigger
+ * MatchWinModal or MatchLoseModal functions
+ */
+function overallWinner() {
+  let playerScore = parseInt(document.getElementById("player-score").innerText);
+  let computerScore = parseInt(document.getElementById("computer-score").innerText);
+  if (playerScore === 5) {
+    let winModal = document.getElementById("win-modal");
+    winModal.style.display = "block";
+  } if (computerScore === 5) {
+    let loseModal = document.getElementById("lose-modal");
+    loseModal.style.display = "block";
+  }
+}
+
+ clickedButton();
