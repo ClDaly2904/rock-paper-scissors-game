@@ -162,7 +162,6 @@ function overallWinner() {
 
 clickedButton();
 
-
 /**
  * Function to close result popup, triggers setting of scores and result-message div
  */
@@ -171,5 +170,17 @@ function closeResult() {
   let loseModal = document.getElementById("lose-modal");
   winModal.style.display = "none";
   loseModal.style.display = "none";
+  resetScores();
 }
 
+/**
+ * Resets player and computer scores to 0, resets result message div to original message
+ */
+function resetScores() {
+  let playerScore = document.getElementById("player-score");
+  let computerScore = document.getElementById("computer-score");
+  let resultMessageDisplay = document.getElementById("result-message");
+  playerScore.innerText = 0;
+  computerScore.innerText = 0;
+  resultMessageDisplay.innerText = "Choose from one of the buttons above to get started...";
+}
