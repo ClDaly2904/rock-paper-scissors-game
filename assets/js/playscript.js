@@ -104,13 +104,13 @@ function gameplay (playerChoiceDisplay) {
 // Updates computer choice display icon to reflect randomly generated computer choice
 function updateComputerChoice(computerChoiceDisplay) {
   if (computerChoiceDisplay == "paperButton") {
-    document.getElementById("computer-choice").src="/assets/images/paper-icon.png";
+    document.getElementById("computer-choice").src="assets/images/paper-icon.png";
     document.getElementById("computer-choice").alt="Icon of a piece of paper";
   } else if (computerChoiceDisplay == "scissorsButton") {
-    document.getElementById("computer-choice").src="/assets/images/scissors-icon.png";
+    document.getElementById("computer-choice").src="assets/images/scissors-icon.png";
     document.getElementById("computer-choice").alt="Icon of a pair of scissors";
   } else {
-    document.getElementById("computer-choice").src="/assets/images/rock-icon.png";
+    document.getElementById("computer-choice").src="assets/images/rock-icon.png";
     document.getElementById("computer-choice").alt-"Icon of a hand in a fist";
   }
 }

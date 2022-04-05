@@ -43,8 +43,10 @@ I settled on Jet Brains Mono for the headings in Rock Paper Scissors as it is a 
 
 ## Credits
 ### Content
+- I used a video tutorial from [freeCodeCamp](https://www.youtube.com/watch?v=jaVNP3nIAv0) to help form some of the functions used for gameplay
+- I took some inspiration from the Code Institute's [LoveMaths](https://codeinstitute.net/) Project, for example the code used to upadate the player and computer scores
 ### General Reference
-- [W3Schools](https://www.w3schools.com/html/). I relied heavily on the guide for making modal popup boxes from this site.
+- [W3Schools](https://www.w3schools.com/html/). I relied heavily on the guide for making modal popup boxes from this site
 - [CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 - [Stack Overflow](https://stackoverflow.com/)
 ### Media
@@ -52,3 +54,4 @@ I settled on Jet Brains Mono for the headings in Rock Paper Scissors as it is a 
 - Fonts from [Google Fonts](https://fonts.google.com/)
 - Icons used from [FontAwesome](https://fontawesome.com/v5/search)
 - Background gradient generated using [ColorSpace](https://mycolor.space/?hex=%23C02141&sub=1)
+- Sound effects taken from [Mixkit](https://mixkit.co/free-sound-effects/)
