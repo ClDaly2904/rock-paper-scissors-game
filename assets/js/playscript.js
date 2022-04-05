@@ -154,6 +154,22 @@ function overallWinner() {
     let loseModal = document.getElementById("lose-modal");
     loseModal.style.display = "block";
   }
+  let closeWinBtn = document.getElementById("win-close");
+  let closeLoseBtn = document.getElementById("lose-close");
+  closeWinBtn.addEventListener("click", closeResult);
+  closeLoseBtn.addEventListener("click", closeResult);
 }
 
- clickedButton();
+clickedButton();
+
+
+/**
+ * Function to close result popup, triggers setting of scores and result-message div
+ */
+function closeResult() {
+  let winModal = document.getElementById("win-modal");
+  let loseModal = document.getElementById("lose-modal");
+  winModal.style.display = "none";
+  loseModal.style.display = "none";
+}
+
