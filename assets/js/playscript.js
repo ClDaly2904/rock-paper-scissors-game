@@ -123,19 +123,19 @@ function clickedButton() {
   rockButton.addEventListener("click", function () {
   gameplay("rockButton");
   // updates player choice display img to relevant icon
-  playerChoiceDisplay.src="/assets/images/rock-icon.png"
+  playerChoiceDisplay.src="assets/images/rock-icon.png"
   playerChoiceDisplay.alt="Icon of a hand in a fist";
   })
   
 paperButton.addEventListener("click", function () {
   gameplay("paperButton");
-  playerChoiceDisplay.src="/assets/images/paper-icon.png"
+  playerChoiceDisplay.src="assets/images/paper-icon.png"
   playerChoiceDisplay.alt="Icon of a piece of paper";
   })
   
 scissorsButton.addEventListener("click", function () {
   gameplay("scissorsButton");
-  playerChoiceDisplay.src="/assets/images/scissors-icon.png";
+  playerChoiceDisplay.src="assets/images/scissors-icon.png";
   playerChoiceDisplay.alt="Icon of a pair of scissors";
   })
 }
