@@ -1,3 +1,12 @@
+/**
+ * Function to receive stored variable player name from script.js and assign it to the player name span
+ */
+function assignPlayerName() {
+  var receivedName = localStorage.getItem("storedName"); // receive stored variable
+  document.getElementById("player-name").innerText = receivedName; // set stored variable to player username
+}
+window.onload = assignPlayerName();
+
 // Getting all the DOM elements needed for gameplay
 const computerChoiceDisplay = document.getElementById("computer-choice");
 const playerChoiceDisplay = document.getElementById("player-choice");
@@ -18,6 +27,7 @@ function generateComputerChoice() {
 /**
  * Convert player and computer choice input for better user readablilty
  */
+// Based on freeCodeCamp Youtube tutorial
 function convertToMessage(term) {
   if (term === "rockButton") return "Rock";
   if (term === "paperButton") return "Paper";
@@ -25,10 +35,10 @@ function convertToMessage(term) {
 }
 
 function playerWins(playerChoiceDisplay, computerChoiceDisplay) {
-  /* Increase player score */
+  // Increase player score
   let oldScore = parseInt(document.getElementById("player-score").innerText);
-  document.getElementById("player-score").innerText = ++oldScore;
-  /* Display result message to congratulate player*/
+  document.getElementById("player-score").innerText = ++oldScore; // Based on LoveMaths increase score code
+  // Display result message to congratulate player
   let resultMessageDisplay = document.getElementById("result-message");
   resultMessageDisplay.innerText = `You played ${convertToMessage(playerChoiceDisplay)}, Computer played ${convertToMessage(computerChoiceDisplay)}.
   ${convertToMessage(playerChoiceDisplay)} beats  ${convertToMessage(computerChoiceDisplay)}!
@@ -38,10 +48,10 @@ function playerWins(playerChoiceDisplay, computerChoiceDisplay) {
 };
 
 function playerLoses(playerChoiceDisplay, computerChoiceDisplay) {
-  /* Increase computer score */
+  // Increase computer score
   let oldComputerScore = parseInt(document.getElementById("computer-score").innerText);
-  document.getElementById("computer-score").innerText = ++oldComputerScore;
-  /* Display result message to commiserate player*/
+  document.getElementById("computer-score").innerText = ++oldComputerScore; // Based on LoveMaths increase score code
+  // Display result message to commiserate player*/
   let resultMessageDisplay = document.getElementById("result-message");
   resultMessageDisplay.innerText = `You played ${convertToMessage(playerChoiceDisplay)}, Computer played ${convertToMessage(computerChoiceDisplay)}.
   ${convertToMessage(computerChoiceDisplay)} beats  ${convertToMessage(playerChoiceDisplay)}!
@@ -51,7 +61,7 @@ function playerLoses(playerChoiceDisplay, computerChoiceDisplay) {
 }
 
 function playerDraws(playerChoiceDisplay, computerChoiceDisplay) {
-  /* Display draw message to player */
+  // Display draw message to player */
   let resultMessageDisplay = document.getElementById("result-message");
   resultMessageDisplay.innerText = `You played ${convertToMessage(playerChoiceDisplay)}, Computer played ${convertToMessage(computerChoiceDisplay)}.
   It's a draw!`
@@ -80,6 +90,7 @@ function playDrawSound(){
  * Function to use switch statement to compare player and computer choices,
  * works out the winner and triggers the relevant function
  */
+// Based on freeCodeCamp YouTube tutorial
 function gameplay (playerChoiceDisplay) {
   let computerChoiceDisplay = generateComputerChoice();
   updateComputerChoice(computerChoiceDisplay);

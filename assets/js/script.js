@@ -26,24 +26,17 @@ window.onclick = function(event) {
   }
 }
 
-// Player username
+// Creating click event to trigger storing player username variable
+let submitPlayerBtn = document.getElementById("submit-name");
+submitPlayerBtn.addEventListener("click", handleSubmit);
+
 /**
  * Creating function to get and save player username
  */
  function handleSubmit() {
-  let playerName = (document.getElementById("playername-input").value);
-  localStorage.setItem("storedName", playerName);
+  var playerName = (document.getElementById("playername-input").value); // creates variable from user input
+  localStorage.setItem("storedName", playerName); // sends variable to local storage
+  window.location.href="play.html"; // sets location of where to send variable
 }
-
-let submitPlayer = document.getElementById("submit-name");
-submitPlayer.addEventListener("click", handleSubmit);
-
-/*// Assigning player username to span in play.html
-function assignPlayerName() {
-  localStorage.getItem("storedName", playerName);
-  let displayPlayer = document.getElementById("player-name").value;
-  displayPlayer = playerName;
-}
-window.onload = assignPlayerName(); */
 
 // Not allowing submit before username box filled
