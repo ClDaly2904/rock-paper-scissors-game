@@ -33,10 +33,10 @@ submitPlayerBtn.addEventListener("click", handleSubmitUsername);
 /**
  * Creating function to get and save player username
  */
- function handleSubmitUsername() {
+function handleSubmitUsername() {
   var playerName = (document.getElementById("playername-input").value); // creates variable from user input
   localStorage.setItem("storedName", playerName); // sends variable to local storage
   window.location.href="play.html"; // sets location of where to send variable
 }
 
-// Not allowing submit before username box filled
+// Not allowing submit before username box filled */

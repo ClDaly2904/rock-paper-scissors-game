@@ -195,3 +195,45 @@ function resetScores() {
   computerScore.innerText = 0;
   resultMessageDisplay.innerText = "Choose from one of the buttons above to get started...";
 }
+
+let soundButton = document.getElementById("sound-button");
+soundButton.addEventListener("click", toggleSound);
+
+function toggleSound() {
+  if (soundButton.innerHTML === "Sound on") {
+    soundButton.innerHTML = "Sound off";
+    mutePage();// Function to mute
+  } else if (soundButton.innerHTML === "Sound off") {
+    soundButton.innerHTML = "Sound on";
+    unmutePage();// Function to unmute
+  }
+}
+
+//Code to mute and unmute all pages based on code found on stack overflow
+// Mute a singular HTML5 element
+function muteMe(elem) {
+  elem.muted = true;
+}
+
+/**
+ * Function that mutes all audio elements on page, calls on function to mute singular element
+ */
+function mutePage() {
+  var elems = document.querySelectorAll("audio");
+
+  [].forEach.call(elems, function(elem) { muteMe(elem); });
+}
+
+// Unmute a singular HTML5 element
+function unmuteMe(elem) {
+  elem.muted = false;
+}
+
+/**
+ * Function that unmutes all audio elements on page, calls on function to unmute singular element
+ */
+function unmutePage() {
+  var elems = document.querySelectorAll("audio");
+
+  [].forEach.call(elems, function(elem) { unmuteMe(elem); });
+}

@@ -28,8 +28,10 @@ h1 {
 
 /* Header */
 header {
+    font-size: 1.2rem;
     line-height: 20px;
-    text-align: left;
+    display: flex;
+    justify-content: space-between;
 }
 
 header a {
@@ -179,4 +181,10 @@ animation-fill-mode: forwards;
 
 .result-modal {
     text-align: center;
+}
+
+#sound-button {
+    font-size: 1.2rem;
+    border: none;
+    background: transparent;
 }
