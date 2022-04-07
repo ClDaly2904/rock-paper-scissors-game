@@ -43,3 +43,8 @@ No issues were found within the CSS code and it passes through the W3C Jigsaw CS
 
 ## Lighthouse
 
+I ran both pages through the Lighthouse validator within Chrome DevTools. I employed learnings from my previous project such as ensuring that all of my links and buttons were a clickable size and used smaller image files that still held a good resolution to achieve high scores in both pages. Consequently, no issues were thrown up by the Lighthouse validator.
+![Screenshot of Lighthouse Validator scores for index.html](docs-images/index-lighthouse-screenshot.png)
+![Screenshot of Lighthouse Validator scores for play.html](docs-images/play-lighthouse-screenshot.png)
+
+## WAVE
