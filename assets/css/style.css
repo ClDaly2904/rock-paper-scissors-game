@@ -59,6 +59,7 @@ footer {
     font-size: 1.2rem;
 }
 
+/* allows hover effect on devices that support it */
 @media (hover: hover) {
     .button:hover {
         cursor: pointer;
@@ -67,12 +68,12 @@ footer {
         transition-duration: 0.6s;
     }
 }
-.button:hover {
-    cursor: pointer;
-    color: black;
-    background-color: snow;
-    transition-duration: 0.6s;
+
+/* stops hover effect on touch devices, prevents giving user incorrect feedback. */
+@media (hover: none) {
+    .button:hover { color: inherit; }
 }
+
 
 /* Game introduction area */
 /* Icon area */
