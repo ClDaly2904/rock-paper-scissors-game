@@ -7,6 +7,8 @@ The purpose of the site is to entertain both new and returning users by allowing
 
 For first time users, the site has a welcome page where they may view the rules of the game and there is clear navigation between the site's two pages. As the computer randomly generates their choice, the game remains challenging for returning players. 
 
+![picture of site on different screen sizes](docs-images/am-i-responsive.png)
+
 ## Features
 ### Colourscheme
 As Rock Paper Scissors is ultimately a game, I wanted to make the site a fun space. For this reason I chose to provide users with a colourful gradient background. I used an eyedropper tool to pick the exact colours from the three main images used (the rock, paper and scissors icons) and used ColorSpace's gradient generator[https://mycolor.space/gradient3] to create a vibrant background that maintained colour continuity for the user.
