@@ -71,7 +71,9 @@ footer {
 
 /* stops hover effect on touch devices, prevents giving user incorrect feedback. */
 @media (hover: none) {
-    .button:hover { color: inherit; }
+    .button:hover {
+        background-color: black;
+        color: snow; }
 }
 
 
