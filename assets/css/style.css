@@ -53,16 +53,25 @@ footer {
 /* Buttons */
 .button {
     background-color: black;
-    color: white;
+    color: snow;
     font-family: 'Sora', sans-serif;
     margin: 1%;
     font-size: 1.2rem;
 }
 
+@media (hover: hover) {
+    .button:hover {
+        cursor: pointer;
+        color: black;
+        background-color: snow;
+        transition-duration: 0.6s;
+    }
+}
 .button:hover {
     cursor: pointer;
     color: black;
-    background-color: white;
+    background-color: snow;
+    transition-duration: 0.6s;
 }
 
 /* Game introduction area */
@@ -73,7 +82,7 @@ footer {
 }
 
 .icon-area {
-    background-color: white;
+    background-color: snow;
     border: 2px solid black;
     display: flex;
     justify-content: space-evenly;
@@ -157,7 +166,7 @@ animation-fill-mode: forwards;
 }
 
 .play-area {
-    background-color: white;
+    background-color: snow;
     border: 2px solid black;
     padding: 2% 0;
 }
@@ -184,6 +193,7 @@ animation-fill-mode: forwards;
 }
 
 #sound-button {
+    color: black;
     font-size: 1.2rem;
     border: none;
     background: transparent;

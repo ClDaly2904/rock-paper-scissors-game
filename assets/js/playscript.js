@@ -174,6 +174,19 @@ function overallWinner() {
 clickedButton();
 
 /**
+ * Modal closes when user clicks outside of popup area
+ */
+window.addEventListener("click", function(event) {
+  let winModal = document.getElementById("win-modal");
+  let loseModal = document.getElementById("lose-modal");
+  if (event.target == winModal) {
+    closeResult();
+  } else if (event.target == loseModal) {
+    closeResult();
+  }
+})
+
+/**
  * Function to close result popup, triggers setting of scores and result-message div
  */
 function closeResult() {
