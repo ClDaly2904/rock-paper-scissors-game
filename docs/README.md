@@ -49,6 +49,8 @@ I settled on Jet Brains Mono for the headings in Rock Paper Scissors as it is a 
 - I took some inspiration from the Code Institute's [LoveMaths](https://codeinstitute.net/) Project, for example the code used to upadate the player and computer scores
 - Whilst debugging my code to use local storage, I found this article and video from [How to Code School](https://www.howtocodeschool.com/2019/05/passing-javascript-value-from-one-page.html) very useful
 - This article by [Better Programming](https://betterprogramming.pub/how-to-restart-a-css-animation-with-javascript-and-what-is-the-dom-reflow-a86e8b6df00f) on how to restart a css animation was vital to allowing me to animate each rock, paper, scissors draw
+- Code to disable hover effect on touch devices from the blog [Web Dev Puneet](https://webdevpuneet.com/how-to-remove-hover-on-touch-devices/#gsc.tab=0)
+
 ### General Reference
 - [W3Schools](https://www.w3schools.com/html/). I relied heavily on the guide for making modal popup boxes from this site
 - [CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
