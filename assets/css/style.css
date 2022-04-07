@@ -201,3 +201,41 @@ animation-fill-mode: forwards;
     border: none;
     background: transparent;
 }
+
+/* Media queries */
+
+/*For medium screen sizes from 839px wide and down */
+
+@media screen and (max-width: 839px) {
+   .modal-content {
+       width: 80%;
+       margin: 20% auto;
+   }
+}   
+
+/* For medium screen sizes 700px wide and down */
+
+@media screen and (max-width: 700px) {
+    .modal-content {
+        width: 90%;
+        margin: 30% auto;
+    }
+ }   
+
+ /* For medium screen to small sizes 500px wide and down */
+
+@media screen and (max-width: 500px) {
+    .modal-content {
+        width: 90%;
+        margin: 40% auto;
+    }
+ }   
+
+ /* For smaller screen sizes and mobile devices 413px wide and down */
+
+ @media screen and (max-width: 413px) {
+     .modal-content {
+         width: 95%;
+         margin: 60% auto;
+     }
+ }
