@@ -113,16 +113,26 @@ function gameplay (playerChoiceDisplay) {
 }
 
 // Updates computer choice display icon to reflect randomly generated computer choice
+// Code to execute restarting a CSS animation taken from an article by Better Programming
 function updateComputerChoice(computerChoiceDisplay) {
   if (computerChoiceDisplay == "paperButton") {
     document.getElementById("computer-choice").src="assets/images/paper-icon.png";
     document.getElementById("computer-choice").alt="Icon of a piece of paper";
+    document.getElementById("computer-choice").classList.remove("animation"); // Better Programming article
+    document.getElementById("computer-choice").offsetWidth;
+    document.getElementById("computer-choice").classList.add("animation");
   } else if (computerChoiceDisplay == "scissorsButton") {
     document.getElementById("computer-choice").src="assets/images/scissors-icon.png";
     document.getElementById("computer-choice").alt="Icon of a pair of scissors";
+    document.getElementById("computer-choice").classList.remove("animation");
+    document.getElementById("computer-choice").offsetWidth;
+    document.getElementById("computer-choice").classList.add("animation");
   } else {
     document.getElementById("computer-choice").src="assets/images/rock-icon.png";
     document.getElementById("computer-choice").alt-"Icon of a hand in a fist";
+    document.getElementById("computer-choice").classList.remove("animation");
+    document.getElementById("computer-choice").offsetWidth;
+    document.getElementById("computer-choice").classList.add("animation");
   }
 }
 
@@ -136,18 +146,27 @@ function clickedButton() {
   // updates player choice display img to relevant icon
   playerChoiceDisplay.src="assets/images/rock-icon.png"
   playerChoiceDisplay.alt="Icon of a hand in a fist";
+  playerChoiceDisplay.classList.remove("animation");
+  playerChoiceDisplay.offsetWidth;
+  playerChoiceDisplay.classList.add("animation");
   })
   
 paperButton.addEventListener("click", function () {
   gameplay("paperButton");
   playerChoiceDisplay.src="assets/images/paper-icon.png"
   playerChoiceDisplay.alt="Icon of a piece of paper";
+  playerChoiceDisplay.classList.remove("animation");
+  playerChoiceDisplay.offsetWidth;
+  playerChoiceDisplay.classList.add("animation");
   })
   
 scissorsButton.addEventListener("click", function () {
   gameplay("scissorsButton");
   playerChoiceDisplay.src="assets/images/scissors-icon.png";
   playerChoiceDisplay.alt="Icon of a pair of scissors";
+  playerChoiceDisplay.classList.remove("animation");
+  playerChoiceDisplay.offsetWidth;
+  playerChoiceDisplay.classList.add("animation");
   })
 }
 

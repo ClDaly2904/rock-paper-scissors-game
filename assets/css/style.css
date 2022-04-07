@@ -95,9 +95,11 @@ footer {
     padding: 2% 0;
 }
 
-
 .icon {
     width: 20%;
+}
+
+.animation {
 /* Creates animation for rock paper scissors icons upon loading the home page */
     animation-name: icon-zoom;
 animation-duration: 2s;
