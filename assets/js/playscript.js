@@ -174,7 +174,7 @@ function overallWinner() {
 clickedButton();
 
 /**
- * Modal closes when user clicks outside of popup area
+ * Triggers closeResult function when user clicks outside modal
  */
 window.addEventListener("click", function(event) {
   let winModal = document.getElementById("win-modal");
