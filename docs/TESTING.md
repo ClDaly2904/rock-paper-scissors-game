@@ -48,3 +48,7 @@ I ran both pages through the Lighthouse validator within Chrome DevTools. I empl
 ![Screenshot of Lighthouse Validator scores for play.html](docs-images/play-lighthouse-screenshot.png)
 
 ## WAVE
+
+In addition to HTML, CSS and Lighthouse validators, I used the [WebAIM](https://wave.webaim.org/) web accessibility evaluation tool to test the accessibility of my website with no errors or contrast errors showing.
+![Screenshot of WAVE for index.html](docs-images/wave-index-screenshot.png)
+![Screenshot of WAVE for play.html](docs-images/wave-play-screenshot.png)

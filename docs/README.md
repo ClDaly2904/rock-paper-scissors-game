@@ -55,6 +55,7 @@ I settled on Jet Brains Mono for the headings in Rock Paper Scissors as it is a 
 - [W3Schools](https://www.w3schools.com/html/). I relied heavily on the guide for making modal popup boxes from this site
 - [CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 - [Stack Overflow](https://stackoverflow.com/), in particular the code used to mute and unmute all elements on the page in [this article](https://stackoverflow.com/questions/14044761/how-to-mute-all-sound-in-a-page-with-js)
+- [Mdm Web Docs](https://developer.mozilla.org/en-US/)
 ### Media
 - Rock Paper Scissors icons from [Vecteezy](https://www.vecteezy.com/free-vector/rock)
 - Fonts from [Google Fonts](https://fonts.google.com/)
