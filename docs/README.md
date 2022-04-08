@@ -175,6 +175,37 @@ I settled on Jet Brains Mono for the headings in Rock Paper Scissors as it is a 
 
 - Display a countdown timer from 3. Triggered when user has chosen their input play, countdown to show computer play and draw outcome. Adds tension and excitement for user
 
+## Wireframes
+
+Before building my site in Gitpod, I took all of the features I thought to be in scope and combined these with my design ideas to create wireframes in Balsamiq.
+
+For the most part I was able to stay true to these wireframe plans, however at my mentor's suggestion I added the button to toggle sound on/off in play.html and took out the submit button in index.html (reasoning covered in my TESTING.md file).
+
+- [Index.html wireframe](wireframes/wireframe-index.png)
+- [Play.html wireframe](wireframes/wireframe-play.png)
+
+## Deployment
+
+The site was deployed and hosted using GitHub's Pages feature. The steps to deploy are as follows:
+1. In the GitHub repository, navigate to the Settings tab
+2. Find and select Pages from the menu on the left
+3. From the source section drop-down menu, select the Main Branch
+4. Once the Main branch has been selected, click save.
+5. The page should refresh automatically with a ribbon display to indicate the successful deployment. However, it may take a moment for the site to deploy.
+
+To clone the project (taken from [GitHub Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)):
+1. On GitHub.com, navigate to the main page of the repository.
+2. Above the list of files, click the green 'Code' button.
+3. To clone the repository using HTTPS, under "Clone with HTTPS", click the clipboard icon. To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority, click Use SSH, then click the clipboard icon. To clone a repository using GitHub CLI, click Use GitHub CLI, then click the clipboard icon.
+4. Open Terminal.
+5. Change the current working directory to the location where you want the cloned directory.
+6. Type git clone, and then paste the URL you copied earlier.
+7. Press Enter to create your local clone.
+
+The live link can be found here - 
+- [Link to live site](https://cldaly2904.github.io/rock-paper-scissors-game/)
+- [Link to repository](https://github.com/ClDaly2904/rock-paper-scissors-game)
+
 ## Credits
 
 ### Content
