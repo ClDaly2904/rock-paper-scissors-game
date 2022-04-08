@@ -80,11 +80,20 @@ I also added a fallback background colour that was a transition colour between t
 
 I settled on Jet Brains Mono for the headings in Rock Paper Scissors as it is a basic but computer-like font, reminiscent of the retro direction I have taken this browser-based game. Sora was chosen as a complimentary font for the body as it still has a computer-like feel but is slightly softer. Both fonts are very easy to read and greatly accessible to both users. They were chosen from an article by awwwards. on the [20 Best Google Fonts](https://www.awwwards.com/20-best-web-fonts-from-google-web-fonts-and-font-face.html).
 
+### Title
+- Kept exactly the same across both .html pages for consistency
+
+### Tagline 
+- When the player lands on the homepage, they are met with the tagline "What will you decide?" underneath the title
+- Serves to intrigue the user, but also lets them know that the gameplay is based on choices
+
 ### Home button
 
 - Contained in the header
 - Provides the user with a simple way to navigate between the home and play pages
 - Use of home icon to make the navigation buttons intuitive for first time users
+- Only in play.html so as not to confuse user when they are in index.html
+- Contains sound on/off toggle button to keep it clear of gameplay area
 
 ### Player name input
 
@@ -99,7 +108,8 @@ I settled on Jet Brains Mono for the headings in Rock Paper Scissors as it is a 
 
 ### Buttons
 
-- Following user feedback during the testing phase of creating Rock Paper Scissors, I increased the size of the buttons to make sure they were a clickable size on the site and gave them hover features. This meant that the presence of the buttons were not only more obvious to users as features on the page, but also provided better feeback from the page to the user and improved experience. However, as covered within my TESTING.md file, I ended up disabling the hover effects for users with touch devices as their rock, paper, scissors choice button remained in their hover state until the next one was chosen, resulting in confusing user feedback.
+- Following user feedback during the testing phase of creating Rock Paper Scissors, I increased the size of the buttons to make sure they were a clickable size on the site and gave them hover features. This meant that the presence of the buttons were not only more obvious to users as features on the page, but also provided better feeback from the page to the user and improved experience. However, as covered within my TESTING.md file, I ended up disabling the hover effects for users with touch devices as their rock, paper, scissors choice button remained in their hover state until the next one was chosen, resulting in confusing user feedback
+- The 'Let's play!' button serves as call-to-action button for the user
 
 ### Player choice buttons
 
@@ -123,6 +133,7 @@ I settled on Jet Brains Mono for the headings in Rock Paper Scissors as it is a 
 
 - Three different sound effects used for win, draw and lose to differentiate outcomes for users
 - Can be controlled at the top of the page with a toggle that is clearly marked by a volume icon
+- Also benefits users with vision impairments
 
 ### Scoreboard
 
