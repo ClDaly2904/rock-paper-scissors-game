@@ -38,5 +38,3 @@ function handleSubmitUsername(event) {
   var playerName = (document.getElementById("playername-input").value); // creates variable from user input
   localStorage.setItem("storedName", playerName); // sends variable to local storage
 }
-
-// Not allowing submit before username box filled */
