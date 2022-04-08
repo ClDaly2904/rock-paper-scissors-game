@@ -32,23 +32,34 @@ To ensure my .html files were compliant with HTML standards, I passed them throu
 - In play.html, I had made an error with two of my br tags. I had input /bt in error
 
 All of these were easily rectified and upon running 
+
 ![Screenshot of W3C HTML Validator pass for index.html](docs-images/html-validator-index.png)
 ![Screenshot of W3C HTML Validator pass for index.html](docs-images/html-validator-play.png)
 
 ## Jigsaw CSS Validator
 
 No issues were found within the CSS code and it passes through the W3C Jigsaw CSS validator with 0 errors. There is 1 warning which just relates to to the validator not being able to check the external Google Font file that was imported.
+
 ![Screenshot of Jigsaw CSS Validator warning](docs-images/css-validator-warning.png)
 ![Screenshot of Jigsaw CSS Validator pass](docs-images/css-validation.png)
 
 ## Lighthouse
 
 I ran both pages through the Lighthouse validator within Chrome DevTools. I employed learnings from my previous project such as ensuring that all of my links and buttons were a clickable size and used smaller image files that still held a good resolution to achieve high scores in both pages. Consequently, no issues were thrown up by the Lighthouse validator.
+
 ![Screenshot of Lighthouse Validator scores for index.html](docs-images/index-lighthouse-screenshot.png)
 ![Screenshot of Lighthouse Validator scores for play.html](docs-images/play-lighthouse-screenshot.png)
 
 ## WAVE
 
 In addition to HTML, CSS and Lighthouse validators, I used the [WebAIM](https://wave.webaim.org/) web accessibility evaluation tool to test the accessibility of my website with no errors or contrast errors showing.
+
 ![Screenshot of WAVE for index.html](docs-images/wave-index-screenshot.png)
 ![Screenshot of WAVE for play.html](docs-images/wave-play-screenshot.png)
+
+## JS Hint
+
+To check for errors within my Javascript files, I ran them through [JS Hint](https://jshint.com/). For my script files, there were a few missing semicolons after functions, but after these were added they both successfull passes through the validator with no errors or warnings.
+
+![Screenshot of JS Hint Validator for index.html](docs-images/js-validator-index.png)
+![Screenshot of JS Validator for play.html](docs-images/js-validator-play.png)

@@ -1,14 +1,14 @@
 /**
  * Function to receive stored variable player name from script.js and assign it to the player name span
  */
-function assignPlayerName() {
+ function assignPlayerName() {
   var receivedName = localStorage.getItem("storedName"); // receive stored variable
   document.getElementById("player-name").innerText = receivedName; // set stored variable to player username
 }
+
 window.onload = assignPlayerName();
 
 // Getting all the DOM elements needed for gameplay
-const computerChoiceDisplay = document.getElementById("computer-choice");
 const playerChoiceDisplay = document.getElementById("player-choice");
 const rockButton = document.getElementById("rockButton");
 const paperButton = document.getElementById("paperButton");
@@ -45,7 +45,7 @@ function playerWins(playerChoiceDisplay, computerChoiceDisplay) {
   You win this draw!`;
   playWinSound();
   overallWinner();
-};
+}
 
 function playerLoses(playerChoiceDisplay, computerChoiceDisplay) {
   // Increase computer score
@@ -64,7 +64,7 @@ function playerDraws(playerChoiceDisplay, computerChoiceDisplay) {
   // Display draw message to player */
   let resultMessageDisplay = document.getElementById("result-message");
   resultMessageDisplay.innerText = `You played ${convertToMessage(playerChoiceDisplay)}, Computer played ${convertToMessage(computerChoiceDisplay)}.
-  It's a draw!`
+  It's a draw!`;
   playDrawSound();
 }
 
@@ -118,20 +118,20 @@ function updateComputerChoice(computerChoiceDisplay) {
   if (computerChoiceDisplay == "paperButton") {
     document.getElementById("computer-choice").src="assets/images/paper-icon.png";
     document.getElementById("computer-choice").alt="Icon of a piece of paper";
-    document.getElementById("computer-choice").classList.remove("animation"); // Better Programming article
-    document.getElementById("computer-choice").offsetWidth;
-    document.getElementById("computer-choice").classList.add("animation");
+    document.getElementById("computer-choice").classList.remove("animation"); // Better Programming article, remove animation
+    void document.getElementById("computer-choice").offsetWidth; //set delay/redirect browser flow
+    document.getElementById("computer-choice").classList.add("animation");// add animation class again so it is triggered again
   } else if (computerChoiceDisplay == "scissorsButton") {
     document.getElementById("computer-choice").src="assets/images/scissors-icon.png";
     document.getElementById("computer-choice").alt="Icon of a pair of scissors";
     document.getElementById("computer-choice").classList.remove("animation");
-    document.getElementById("computer-choice").offsetWidth;
+    void document.getElementById("computer-choice").offsetWidth;
     document.getElementById("computer-choice").classList.add("animation");
   } else {
     document.getElementById("computer-choice").src="assets/images/rock-icon.png";
-    document.getElementById("computer-choice").alt-"Icon of a hand in a fist";
+    document.getElementById("computer-choice").alt="Icon of a hand in a fist";
     document.getElementById("computer-choice").classList.remove("animation");
-    document.getElementById("computer-choice").offsetWidth;
+    void document.getElementById("computer-choice").offsetWidth;
     document.getElementById("computer-choice").classList.add("animation");
   }
 }
@@ -144,30 +144,28 @@ function clickedButton() {
   rockButton.addEventListener("click", function () {
   gameplay("rockButton");
   // updates player choice display img to relevant icon
-  playerChoiceDisplay.src="assets/images/rock-icon.png"
+  playerChoiceDisplay.src="assets/images/rock-icon.png";
   playerChoiceDisplay.alt="Icon of a hand in a fist";
   playerChoiceDisplay.classList.remove("animation");
-  playerChoiceDisplay.offsetWidth;
+  void playerChoiceDisplay.offsetWidth;
   playerChoiceDisplay.classList.add("animation");
-  })
-  
+  });
 paperButton.addEventListener("click", function () {
   gameplay("paperButton");
-  playerChoiceDisplay.src="assets/images/paper-icon.png"
+  playerChoiceDisplay.src="assets/images/paper-icon.png";
   playerChoiceDisplay.alt="Icon of a piece of paper";
   playerChoiceDisplay.classList.remove("animation");
-  playerChoiceDisplay.offsetWidth;
+  void playerChoiceDisplay.offsetWidth;
   playerChoiceDisplay.classList.add("animation");
-  })
-  
+  });
 scissorsButton.addEventListener("click", function () {
   gameplay("scissorsButton");
   playerChoiceDisplay.src="assets/images/scissors-icon.png";
   playerChoiceDisplay.alt="Icon of a pair of scissors";
   playerChoiceDisplay.classList.remove("animation");
-  playerChoiceDisplay.offsetWidth;
+  void playerChoiceDisplay.offsetWidth;
   playerChoiceDisplay.classList.add("animation");
-  })
+  });
 }
 
 /**
@@ -203,7 +201,7 @@ window.addEventListener("click", function(event) {
   } else if (event.target == loseModal) {
     closeResult();
   }
-})
+});
 
 /**
  * Function to close result popup, triggers setting of scores and result-message div

@@ -8,14 +8,14 @@ var closeBtn = document.getElementsByClassName("close")[0];
  */
 rulesBtn.onclick = function() {
   rulesPopup.style.display = "block";
-}
+};
 
 /**
  * Close modal on button click
  */
 closeBtn.onclick = function() {
   rulesPopup.style.display = "none";
-}
+};
 
 /**
  * Modal closes when user clicks outside of popup area
@@ -24,7 +24,7 @@ window.onclick = function(event) {
   if (event.target == rulesPopup) {
     rulesPopup.style.display = "none";
   }
-}
+};
 
 // Creating click event to trigger storing player username variable
 let submitPlayerBtn = document.getElementById("play-button");
