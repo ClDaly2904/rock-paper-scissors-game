@@ -70,7 +70,7 @@ When planning Rock, Paper, Scissors, I had to consider how I was going to achiev
 
 ### Colourscheme
 
-As Rock Paper Scissors is ultimately a game, I wanted to make the site a fun space. For this reason I chose to provide users with a colourful gradient background. I used an eyedropper tool to pick the exact colours from the three main images used (the rock, paper and scissors icons) and used ColorSpace's gradient generator[https://mycolor.space/gradient3] to create a vibrant background that maintained colour continuity for the user. I went for a 'retro' feel to the site that would be colourful enough to engage younger users, but would also resonate with older users.
+As Rock Paper Scissors is ultimately a game, I wanted to make the site a fun space. For this reason I chose to provide users with a colourful gradient background. I used an eyedropper tool to pick the exact colours from the three main images used (the rock, paper and scissors icons) and used [ColorSpace's gradient generator](https://mycolor.space/gradient3) to create a vibrant background that maintained colour continuity for the user. I went for a 'retro' feel to the site that would be colourful enough to engage younger users, but would also resonate with older users.
 
 I paired this with large white areas for much of the gameplay so as not to distract the user from the game itself and to ensure there was still sufficient contrast for the user.
 
