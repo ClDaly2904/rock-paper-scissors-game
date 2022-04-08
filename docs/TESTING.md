@@ -71,3 +71,12 @@ To check for errors within my Javascript files, I ran them through [JS Hint](htt
 
 ![Screenshot of JS Hint Validator for index.html](docs-images/js-validator-index.png)
 ![Screenshot of JS Validator for play.html](docs-images/js-validator-play.png)
+
+## Colour Contrast Validator
+
+To ensure that all of my colours had the correct level of contrast, I ran them through the [WebAIM contrast checker](https://webaim.org/resources/contrastchecker/). As my background was a gradient, I chose the colours where there was black text on top to run through the checker. For the main gameplay areas, I had used a white div with black writing to ensure high contrast and so as not to distract the user from the game itself.
+
+![Screenshot of contrast checker blue](docs-images/contrast-checker-blue.png)
+![Screenshot of contrast checker turquoise](docs-images/contrast-checker-turquoise.png)
+![Screenshot of contrast checker yellowy green](docs-images/contrast-checker-yellowgreen.png)
+![Screenshot of contrast checker white](docs-images/contrast-checker-white.png)
