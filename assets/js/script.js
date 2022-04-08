@@ -27,14 +27,13 @@ window.onclick = function(event) {
 }
 
 // Creating click event to trigger storing player username variable
-let submitPlayerBtn = document.getElementById("submit-name");
+let submitPlayerBtn = document.getElementById("play-button");
 submitPlayerBtn.addEventListener("click", handleSubmitUsername);
 
 /**
  * Creating function to get and save player username
  */
-function handleSubmitUsername(event) {
-  event.preventDefault();
+function handleSubmitUsername() {
   var playerName = (document.getElementById("playername-input").value); // creates variable from user input
   localStorage.setItem("storedName", playerName); // sends variable to local storage
 }
