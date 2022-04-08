@@ -9,11 +9,68 @@ For first time users, the site has a welcome page where they may view the rules 
 
 ![picture of site on different screen sizes](docs-images/am-i-responsive.png)
 
+### Target Audiences
+- For users wanting to relax and have some fun playing a simple yet engaging browser based game!
+- For users that do not know how to play rock, paper, scissors
+- For users that may have played rock, paper, scissors but not online
+- For users that have played other rock, paper, scissors games
+
+### User Aims
+- As a user, I am looking to be able to play a quick game where little set-up is required
+- As a user, I am coming to this site to have fun and be entertained
+- As a user, I want clear prompts and instructions on how to play the game
+- As a user, I want to be able to see the rules of the game
+- As a user, I want clear navigation around the site to play the game
+- As a user, I want it to be obvious where the controls are and what I should click
+- As a user, I want to know if I have won or lost a draw
+- As a user, I want to know if I have won or lost the game overall
+- As a user, I want to be able to see my score
+- As a user, I would like the option to play the game again
+- As a user, I would appreciate visual aids/graphics
+- As a user, I want to be able to play on any device
+
+### Rock, Paper, Scissors' Aims
+
+- To create a visually appealing space that is fun for all users
+- To create a game that can be enjoyed again and again
+- To provide clear instructions to players
+- To provide a positive user experience
+- To provide simple and clear navigation options to users
+- For the game to be well presented on any device
+
+### User Stories
+
+- First time visitors
+    - There is a clear option on the landing page where they can view the rules of the game if they don't know how to play
+    - The game gives feedback with each drawer which reiterates which rock, paper, scissors choice beats which
+    - First time users can use the intuitive button at the top of the page to return to the homepage and view the rules again
+
+- Returning visitors
+    - As the computer's choice is based upon a random number generator, the computer's choice is truly random. This means that there is no pattern that the player can learn to easily beat the game, helping to ensure they do not tire of it
+    - Users who have played the game enough may also get the added benefit of being able to recognise whether the outcome of a draw by the unique sound played for winning, losing and drawing, thus speeding up their gameplay
+
+### User Journey
+
+1. As a user, I find the browser based game through a search engine with key words
+2. I land on a colourful page that tells me that it is a Rock, Paper, Scissors game with a tag line that makes me realise the game is based on choices. The images on the page match the title as they are for a hand in a fist showing rock, a picture of paper and a pair of scissors
+3. I see that I need to choose my own player name
+4. I see that I can check the rules before I play the game. When I click the 'Rules' button, a popup tells me that I need to choose either rock, paper or scissors, that I will be playing against the computer, and how I can beat it. I know now that I need to beat the computer 5 times to win the game overall.
+5. I enter my chosen username and when I am ready to play, I hit the button that says 'Let's play'
+6. I am greeted by a message that tells me I need to click on one the big black buttons
+7. When I make my first choice and click on the button, several things happen at once. I can see the images change and there is sound. There is a message that tells me if I have won or lost.
+8. I notice down at the bottom that my score has increased (or computer score has increased)
+9. I don't want the sound on, so I click at the top where I recognise the volume icon and it turns off
+10. I choose again until I have won or have been beaten by the computer. (If user leaves the sound on, they may know immediately after clicking the button if they have won or not if they recognise the sound effects)
+11. A message pops up to tell me I have won (or lost) the game overall, and that if I click the red cross I can play again
+12. If I click the red cross I can see both my score and the computer score have gone back to 0
+
+When planning Rock, Paper, Scissors, I had to consider how I was going to achieve both the above aims for the user, and for the game's creators. This led to the creation of all the features found in the Features section.
+
 ## Features
 
 ### Colourscheme
 
-As Rock Paper Scissors is ultimately a game, I wanted to make the site a fun space. For this reason I chose to provide users with a colourful gradient background. I used an eyedropper tool to pick the exact colours from the three main images used (the rock, paper and scissors icons) and used ColorSpace's gradient generator[https://mycolor.space/gradient3] to create a vibrant background that maintained colour continuity for the user.
+As Rock Paper Scissors is ultimately a game, I wanted to make the site a fun space. For this reason I chose to provide users with a colourful gradient background. I used an eyedropper tool to pick the exact colours from the three main images used (the rock, paper and scissors icons) and used ColorSpace's gradient generator[https://mycolor.space/gradient3] to create a vibrant background that maintained colour continuity for the user. I went for a 'retro' feel to the site that would be colourful enough to engage younger users, but would also resonate with older users.
 
 I paired this with large white areas for much of the gameplay so as not to distract the user from the game itself and to ensure there was still sufficient contrast for the user.
 
