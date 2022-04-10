@@ -1,13 +1,17 @@
 # Rock Paper Scissors
 
 ## About
+
 Rock, Paper, Scissors is a classic game of chance presented to the user in the form of a browser based game.
+[Link to live site](https://cldaly2904.github.io/rock-paper-scissors-game/)
 
 The purpose of the site is to entertain both new and returning users by allowing them to compete against the computer, where the first to win three draws wins the overall game.
 
 For first time users, the site has a welcome page where they may view the rules of the game and there is clear navigation between the site's two pages. As the computer randomly generates their choice, the game remains challenging for returning players. 
 
 ![picture of site on different screen sizes](docs-images/am-i-responsive.png)
+
+## User Experience
 
 ### Target Audiences
 - For users wanting to relax and have some fun playing a simple yet engaging browser based game!
@@ -66,8 +70,6 @@ For first time users, the site has a welcome page where they may view the rules 
 
 When planning Rock, Paper, Scissors, I had to consider how I was going to achieve both the above aims for the user, and for the game's creators. This led to the creation of all the features found in the Features section.
 
-## Features
-
 ### Colourscheme
 
 As Rock Paper Scissors is ultimately a game, I wanted to make the site a fun space. For this reason I chose to provide users with a colourful gradient background. I used an eyedropper tool to pick the exact colours from the three main images used (the rock, paper and scissors icons) and used [ColorSpace's gradient generator](https://mycolor.space/gradient3) to create a vibrant background that maintained colour continuity for the user. I went for a 'retro' feel to the site that would be colourful enough to engage younger users, but would also resonate with older users.
@@ -79,6 +81,17 @@ I also added a fallback background colour that was a transition colour between t
 ### Fonts
 
 I settled on Jet Brains Mono for the headings in Rock Paper Scissors as it is a basic but computer-like font, reminiscent of the retro direction I have taken this browser-based game. Sora was chosen as a complimentary font for the body as it still has a computer-like feel but is slightly softer. Both fonts are very easy to read and greatly accessible to both users. They were chosen from an article by awwwards. on the [20 Best Google Fonts](https://www.awwwards.com/20-best-web-fonts-from-google-web-fonts-and-font-face.html).
+
+### Wireframes
+
+Before building my site in Gitpod, I took all of the features I thought to be in scope and combined these with my design ideas to create wireframes in Balsamiq.
+
+For the most part I was able to stay true to these wireframe plans, however at my mentor's suggestion I added the button to toggle sound on/off in play.html and took out the submit button in index.html (reasoning covered in my TESTING.md file).
+
+- [Index.html wireframe](wireframes/wireframe-index.png)
+- [Play.html wireframe](wireframes/wireframe-play.png)
+
+## Features
 
 ### Title
 - Kept exactly the same across both .html pages for consistency
@@ -175,14 +188,38 @@ I settled on Jet Brains Mono for the headings in Rock Paper Scissors as it is a 
 
 - Display a countdown timer from 3. Triggered when user has chosen their input play, countdown to show computer play and draw outcome. Adds tension and excitement for user
 
-## Wireframes
+## Technologies Used
+- Eyedropper Tool (Chrome Extension)
+    - This tool allows me pick any colour from the web page I am and gives me the name (if applicable), hex, hsl and rgb values. I used this to choose the background colour for the webpages and the divs to ensure they matched the colours from the rock, paper and scissors icons used
+- WebAIM
+    - Contrast Checker - checks the contrast of colours input against the Web Content Accessibility Guidelines. I input my background and foreground/text colours to ensure they meet the WCAG AA/AAA standards
+    - WAVE - WAVE can identify many accessibility and Web Content Accessibility Guideline (WCAG) errors
+- Balsamiq wireframing tool -
+    - To create wireframes and plan out my project before beginning to write it in Gitpod
+- Canva -
+    - I used the online image cropping tool to cut the rock, paper, scissors image I found on Vecteezy into three individual icons
+- Fontawesome
+    - The home and volume icons are taken from FontAwesome version 5
+- Google Fonts
+    - Both my title and body fonts are imported from Google Fonts
+- W3C Markup Validation Service
+    - I used the HTML validator to run both my html pages and ensure there were no errors
+    - I used the Jigsaw CSS validator to ensure that my CSS file did not contain any errors
+- Lighthouse (Chrome DevTools)
+    - An open-source, automated tool for improving the quality of web pages. I used it to audit performance, accessibility, SEO and best practices
+- JS Hint
+    - An online service used to validate my javascript files
+- Github to deploy and host my live site
+- Gitpod to an open-source developer platform used to write my code (using VS Code)
+- Visual Code Studio (VS Code)
+    - Visual Studio Code is a streamlined code editor with support for development operations like debugging, task running, and version control
+    - I used several VS Code extensions to help make my work more efficient such as:
+        - Auto Close Tag (automatically adds HTML/XML closing tags)
+        - Auto Open Preview Page (opens a preview panel when markdown or asciidoc file is opened)
 
-Before building my site in Gitpod, I took all of the features I thought to be in scope and combined these with my design ideas to create wireframes in Balsamiq.
+## Testing 
 
-For the most part I was able to stay true to these wireframe plans, however at my mentor's suggestion I added the button to toggle sound on/off in play.html and took out the submit button in index.html (reasoning covered in my TESTING.md file).
-
-- [Index.html wireframe](wireframes/wireframe-index.png)
-- [Play.html wireframe](wireframes/wireframe-play.png)
+Testing notes for this project are contained in a separate [TESTING.md](TESTING.md) file.
 
 ## Deployment
 
