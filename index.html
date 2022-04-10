@@ -7,13 +7,16 @@
     <meta name = "Description" content="Rock Paper Scissors browser based game against the computer">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Rock Paper Scissors</title>
+    <!--Favicon link-->
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.svg">
 </head>
 <body>
- 
+    <!--Main Heading -->
     <h1 class="heading">Rock  Paper  Scissors</h1>
+    <!--Tagline-->
     <h2 class="subheading">Which will you choose?</h2>
 
+    <!--Area to display icon images-->
     <div class="game-intro">
         <div class="icon-area">
             <div class="rock-icon icon animation">
@@ -26,12 +29,16 @@
                 <img id="scissors-img" src="assets/images/scissors-icon.png" alt="Icon of a pair of scissors">
             </div>
         </div>
+        <!--Player setup area-->
         <div class="player-setup">
             <form action="play.html">
+                <!--Player name input-->
                 <label for="playername-input"><i class="fas fa-user"></i> Player name:</label>
                 <input type="text" pattern="[A-Za-z]+" id="playername-input" name="playername" placeholder="Please enter name" required> 
                 <br>
+                <!--Button to trigger rules modal popup-->
                 <button class="button" id="rules">Rules</button>
+                <!--Button to take user to play.html and confirm username-->
                 <input class="button" type="submit" value="Let's Play!" id="play-button">
             </form>
         </div>
@@ -56,7 +63,9 @@
   </div>
 </div>
     
+    <!--Footer-->
     <footer>
+        <!--Contains copyright info-->
         <p>copyright@cldaly2904 2022</p>
     </footer>
 
