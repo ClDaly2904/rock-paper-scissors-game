@@ -1,5 +1,13 @@
 # Rock Paper Scissors
 
+## Contents
+1. [About](#About)
+2. [User Experience](#UserExperience)
+    - [Target Audiences](#UserExperiences)
+    - [User Stories](#UserStories)
+    - [Rock, Paper, Scissors' Aims](#Rock,Paper,Scissors'Aims)
+
+<a name="About"></a>
 ## About
 
 Rock, Paper, Scissors is a classic game of chance presented to the user in the form of a browser based game.
@@ -11,15 +19,16 @@ For first time users, the site has a welcome page where they may view the rules 
 
 ![picture of site on different screen sizes](docs-images/am-i-responsive.png)
 
+<a name="UserExperience"></a>
 ## User Experience
 
 ### Target Audiences
 - For users wanting to relax and have some fun playing a simple yet engaging browser based game!
 - For users that do not know how to play rock, paper, scissors
 - For users that may have played rock, paper, scissors but not online
-- For users that have played other rock, paper, scissors games
+- For users that have played other rock, paper, scissors online games
 
-### User Aims
+### User Stories
 - As a user, I am looking to be able to play a quick game where little set-up is required
 - As a user, I am coming to this site to have fun and be entertained
 - As a user, I want clear prompts and instructions on how to play the game
@@ -42,16 +51,14 @@ For first time users, the site has a welcome page where they may view the rules 
 - To provide simple and clear navigation options to users
 - For the game to be well presented on any device
 
-### User Stories
+### First time visitors
+- There is a clear option on the landing page where they can view the rules of the game if they don't know how to play
+- The game gives feedback with each drawer which reiterates which rock, paper, scissors choice beats which
+- First time users can use the intuitive button at the top of the page to return to the homepage and view the rules again
 
-- First time visitors
-    - There is a clear option on the landing page where they can view the rules of the game if they don't know how to play
-    - The game gives feedback with each drawer which reiterates which rock, paper, scissors choice beats which
-    - First time users can use the intuitive button at the top of the page to return to the homepage and view the rules again
-
-- Returning visitors
-    - As the computer's choice is based upon a random number generator, the computer's choice is truly random. This means that there is no pattern that the player can learn to easily beat the game, helping to ensure they do not tire of it
-    - Users who have played the game enough may also get the added benefit of being able to recognise whether the outcome of a draw by the unique sound played for winning, losing and drawing, thus speeding up their gameplay
+### Returning visitors
+- As the computer's choice is based upon a random number generator, the computer's choice is truly random. This means that there is no pattern that the player can learn to easily beat the game, helping to ensure they do not tire of it
+- Users who have played the game enough may also get the added benefit of being able to recognise whether the outcome of a draw by the unique sound played for winning, losing and drawing, thus speeding up their gameplay
 
 ### User Journey
 
