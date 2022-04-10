@@ -48,12 +48,14 @@ For first time users, the site has a welcome page where they may view the rules 
 ## User Experience
 
 ### Target Audiences
+
 - For users wanting to relax and have some fun playing a simple yet engaging browser based game!
 - For users that do not know how to play rock, paper, scissors
 - For users that may have played rock, paper, scissors but not online
 - For users that have played other rock, paper, scissors online games
 
 ### User Stories
+
 - As a user, I am looking to be able to play a quick game where little set-up is required
 - As a user, I am coming to this site to have fun and be entertained
 - As a user, I want clear prompts and instructions on how to play the game
@@ -77,11 +79,13 @@ For first time users, the site has a welcome page where they may view the rules 
 - For the game to be well presented on any device
 
 ### First time visitors
+
 - There is a clear option on the landing page where they can view the rules of the game if they don't know how to play
 - The game gives feedback with each drawer which reiterates which rock, paper, scissors choice beats which
 - First time users can use the intuitive button at the top of the page to return to the homepage and view the rules again
 
 ### Returning visitors
+
 - As the computer's choice is based upon a random number generator, the computer's choice is truly random. This means that there is no pattern that the player can learn to easily beat the game, helping to ensure they do not tire of it
 - Users who have played the game enough may also get the added benefit of being able to recognise whether the outcome of a draw by the unique sound played for winning, losing and drawing, thus speeding up their gameplay
 
@@ -126,9 +130,11 @@ For the most part I was able to stay true to these wireframe plans, however at m
 ## Features
 
 ### Title
+
 - Kept exactly the same across both .html pages for consistency
 
 ### Tagline 
+
 - When the player lands on the homepage, they are met with the tagline "What will you decide?" underneath the title
 - Serves to intrigue the user, but also lets them know that the gameplay is based on choices
 
@@ -221,6 +227,7 @@ For the most part I was able to stay true to these wireframe plans, however at m
 - Display a countdown timer from 3. Triggered when user has chosen their input play, countdown to show computer play and draw outcome. Adds tension and excitement for user
 
 ## Technologies Used
+
 - Eyedropper Tool (Chrome Extension)
     - This tool allows me pick any colour from the web page I am and gives me the name (if applicable), hex, hsl and rgb values. I used this to choose the background colour for the webpages and the divs to ensure they matched the colours from the rock, paper and scissors icons used
 - WebAIM
