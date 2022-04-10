@@ -1,13 +1,39 @@
 # Rock Paper Scissors
 
 ## Contents
-1. [About](#About)
-2. [User Experience](#UserExperience)
-    - [Target Audiences](#UserExperiences)
-    - [User Stories](#UserStories)
-    - [Rock, Paper, Scissors' Aims](#Rock,Paper,Scissors'Aims)
+1. [About](#about)
+2. [User Experience](#user-experience)
+    - [Target Audiences](#target-audiences)
+    - [User Stories](#user-stories)
+    - [Rock, Paper, Scissors' Aims](#rock-paper-scissors-aims)
+    - [First Time Visitors](#first-time-visitors)
+    - [Returning Visitors](#returning-visitors)
+    - [User Journey](#user-journey)
+    - [Colourscheme](#colourscheme)
+    - [Fonts](#fonts)
+    - [Wireframes](#wireframes)
+3. [Features](#features)
+    - [Title](#title)
+    - [Tagline](#tagline)
+    - [Home Button](#home-button)
+    - [Player Name Input](#player-name-input)
+    - [Rules](#rules)
+    - [Buttons](#buttons)
+    - [Player Choice Buttons](#player-choice-buttons)
+    - [Area to display player and computer choice icons](#area-to-display-player-and-computer-choice-icons)
+    - [Result Message Area](#result-message-area)
+    - [Sound Effects](#sound-effects)
+    - [Scoreboard](#scoreboard)
+    - [Victory and defeat popup modals](#victory-and-defeat-popup-modals)
+3. [Possible Future Features](#possible-future-features)
+4. [Technologies Used](#technologies-used)
+5. [Testing](#testing)
+6. [Deployment](#deployment)
+7. [Credits](#credits)
+    - [General Reference](#general-reference)
+    - [Content](#content)
+    - [Media](#media)
 
-<a name="About"></a>
 ## About
 
 Rock, Paper, Scissors is a classic game of chance presented to the user in the form of a browser based game.
@@ -19,7 +45,6 @@ For first time users, the site has a welcome page where they may view the rules 
 
 ![picture of site on different screen sizes](docs-images/am-i-responsive.png)
 
-<a name="UserExperience"></a>
 ## User Experience
 
 ### Target Audiences
