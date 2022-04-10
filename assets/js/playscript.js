@@ -6,6 +6,7 @@
   document.getElementById("player-name").innerText = receivedName; // set stored variable to player username
 }
 
+// On window loading, trigger assignPlayerName function
 window.onload = assignPlayerName();
 
 // Getting all the DOM elements needed for gameplay
@@ -34,6 +35,13 @@ function convertToMessage(term) {
   return "Scissors";
 }
 
+/**
+ * Function triggered if player wins draw. Increases the value in the players score area, displays result
+ * message using template literal
+ * Plays win sound
+ * @param {*} playerChoiceDisplay 
+ * @param {*} computerChoiceDisplay 
+ */
 function playerWins(playerChoiceDisplay, computerChoiceDisplay) {
   // Increase player score
   let oldScore = parseInt(document.getElementById("player-score").innerText);
@@ -42,11 +50,18 @@ function playerWins(playerChoiceDisplay, computerChoiceDisplay) {
   let resultMessageDisplay = document.getElementById("result-message");
   resultMessageDisplay.innerText = `You played ${convertToMessage(playerChoiceDisplay)}, Computer played ${convertToMessage(computerChoiceDisplay)}.
   ${convertToMessage(playerChoiceDisplay)} beats  ${convertToMessage(computerChoiceDisplay)}!
-  You win this draw!`;
-  playWinSound();
-  overallWinner();
+  You win this draw!`;//Template literal inserts user and computer choices
+  playWinSound();//Triggers playWinSound function
+  overallWinner();//Passes new player score to overallWinner function for comparison against computer score
 }
 
+/**
+ * Function triggered if computer wins draw. Increases the value in the computers score area, displays result
+ * message using template literal
+ * Plays lose sound
+ * @param {*} playerChoiceDisplay 
+ * @param {*} computerChoiceDisplay 
+ */
 function playerLoses(playerChoiceDisplay, computerChoiceDisplay) {
   // Increase computer score
   let oldComputerScore = parseInt(document.getElementById("computer-score").innerText);
@@ -55,17 +70,23 @@ function playerLoses(playerChoiceDisplay, computerChoiceDisplay) {
   let resultMessageDisplay = document.getElementById("result-message");
   resultMessageDisplay.innerText = `You played ${convertToMessage(playerChoiceDisplay)}, Computer played ${convertToMessage(computerChoiceDisplay)}.
   ${convertToMessage(computerChoiceDisplay)} beats  ${convertToMessage(playerChoiceDisplay)}!
-  You lose this draw!`;
-  playLoseSound();
-  overallWinner();
+  You lose this draw!`;//Template literal inserts user and computer choices
+  playLoseSound();//Triggers playLoseSound function
+  overallWinner();//Passes new computer score to overallWinner function for comparison against player score
 }
 
+/**
+ * Function triggered if player draws. No scores are increased and draw result message is displayed
+ * Plays draw sound
+ * @param {*} playerChoiceDisplay 
+ * @param {*} computerChoiceDisplay 
+ */
 function playerDraws(playerChoiceDisplay, computerChoiceDisplay) {
   // Display draw message to player */
   let resultMessageDisplay = document.getElementById("result-message");
   resultMessageDisplay.innerText = `You played ${convertToMessage(playerChoiceDisplay)}, Computer played ${convertToMessage(computerChoiceDisplay)}.
-  It's a draw!`;
-  playDrawSound();
+  It's a draw!`;//Template literal inserts user and computer choices
+  playDrawSound();//Triggers playDrawSound function
 }
 
 // Plays win sound if player wins
@@ -188,6 +209,7 @@ function overallWinner() {
   closeLoseBtn.addEventListener("click", closeResult);
 }
 
+//Sets of js functions and gameplay when player clicks on a control button
 clickedButton();
 
 /**
@@ -226,9 +248,13 @@ function resetScores() {
   resultMessageDisplay.innerText = "Choose from one of the buttons above to get started...";
 }
 
+// Add soundButton event listener
 let soundButton = document.getElementById("sound-button");
 soundButton.addEventListener("click", toggleSound);
 
+/**
+ * Function to toggle all sound in window on and off. Text inside button also changes to feedback to user
+ */
 function toggleSound() {
   if (soundButton.innerHTML === "Sound on") {
     soundButton.innerHTML = "Sound off";
